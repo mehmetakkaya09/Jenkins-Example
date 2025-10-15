@@ -1,0 +1,40 @@
+pipeline {
+
+  agent any
+
+  stages {
+
+    stage("commit"){
+      echo "code commited"
+    }
+
+    stage("build"){
+      stages{
+        echo "code built"
+      }
+    }
+
+    stage("dev-unit"){
+      echo "unit test began"
+    }
+
+    stage("dev-integration"){
+      echo "integration test began"
+    }
+
+    stage("qa-smoke"){
+      echo "smoke test started"
+    }
+
+    stage("qa-regression"){
+      echo "regression test started"
+    }
+
+    stage("report"){
+      echo "test report is generated"
+    }
+
+  }
+
+
+}
