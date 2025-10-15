@@ -5,43 +5,43 @@ pipeline {
   stages {
 
     stage("commit"){
-      stages{
+      steps{
         echo "code commited"
       }
     }
 
     stage("build"){
-      stages{
+      steps{
         echo "code built"
       }
     }
 
     stage("dev-unit"){
-      stages{
+      steps{
         echo "unit test began"
       }
     }
 
     stage("dev-integration"){
-      stages{
+      steps{
         echo "integration test began"
       }
     }
 
     stage("qa-smoke"){
-      stages{
+      steps{
         echo "smoke test started"
       }
     }
 
     stage("qa-regression"){
-      stages{
+      steps{
         echo "regression test started"
       }
     }
 
     stage("report"){
-      stages{
+      steps{
         echo "test report is generated"
       }
     }
