@@ -13,6 +13,8 @@ pipeline {
     stage("build"){
       steps{
         echo "code built"
+        bat "javac hello.java"
+        bat "java hello"
       }
     }
 
